@@ -2,7 +2,7 @@
 
 Package provides framework-agnostic helper `env($key, $default)` to retrieve environment variables in convenient way.
 
-Highly inspired by Laravel env helper.
+Highly inspired by [Laravel env helper](https://laravel.com/docs/8.x/helpers#method-env).
 
 ## Installation
 
@@ -17,7 +17,7 @@ $defaultValue = 'prod';
 $value = env($varName, $defaultValue);
 ```
 
-Second parameter can be function. In that case helper will use result of this function as default value:
+Second parameter can be a function. In that case helper will use result of this function as default value:
 
 ```php
 $value = env('CACHE_STORAGE', function () {
@@ -35,7 +35,7 @@ If `env()` function already exists in your codebase, you can use namespaced call
 $value = Zadorin\env('APP_ENV', 'prod');
 ```
 
-Helper automatically casts string values `'true', 'false'` to boolean type. Also `'null'` string casts to null.
+Helper automatically casts string values `'true', 'false'` to boolean type. Similarly, `'null'` string casts to null.
 
 ## Tests
 
