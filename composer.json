@@ -1,0 +1,29 @@
+{
+    "name": "zadorin/better-getenv",
+    "description": "Simple helper to retrieve environment variables",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["env", "getenv", "environment"],
+    "authors": [
+        {
+            "name": "Eugene Zadorin",
+            "email": "mail@eugenezadorin.ru"
+        }
+    ],
+    "require": {
+        "php": ">=7.4"
+    },
+    "autoload": {
+        "files": [
+            "src/namespaced.php",
+            "src/global.php"
+        ]
+    },
+    "require-dev": {
+        "pestphp/pest": "^1.21",
+        "vlucas/phpdotenv": "^5.4"
+    },
+    "suggest": {
+        "vlucas/phpdotenv": "Environment variables loader"
+    }
+}
